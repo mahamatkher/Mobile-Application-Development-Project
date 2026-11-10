@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="7dp"
+    android:background="@drawable/bg_cart_item"
+    android:padding="12dp">
+
+    <!-- Coffee Image Frame -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageContainer"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        app:cardBackgroundColor="#211A16"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/picCatr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@drawable/splash_pic" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Item Title -->
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/removeItemBtn"
+        app:layout_constraintStart_toEndOf="@+id/imageContainer"
+        app:layout_constraintTop_toTopOf="@+id/imageContainer"
+        tools:text="Americano" />
+
+    <!-- Size Badge -->
+    <TextView
+        android:id="@+id/sizeBadgeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_size_pill"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:textColor="@color/orange"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageContainer"
+        app:layout_constraintTop_toBottomOf="@+id/titleTxt"
+        tools:text="☕ Small" />
+
+    <!-- Unit Price -->
+    <TextView
+        android:id="@+id/feeEachItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/lightBrown"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sizeBadgeTxt"
+        app:layout_constraintStart_toEndOf="@+id/sizeBadgeTxt"
+        app:layout_constraintTop_toTopOf="@+id/sizeBadgeTxt"
+        tools:text="• $5.50 each" />
+
+    <!-- Item Total Price -->
+    <TextView
+        android:id="@+id/totalEachItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageContainer"
+        app:layout_constraintStart_toEndOf="@+id/imageContainer"
+        tools:text="$5.50" />
+
+    <!-- Delete / Trash Button -->
+    <ImageView
+        android:id="@+id/removeItemBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_glass_circle"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_trash" />
+
+    <!-- Modern Quantity Stepper -->
+    <LinearLayout
+        android:id="@+id/quantityStepper"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_qty_stepper"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageContainer"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Minus Button -->
+        <TextView
+            android:id="@+id/minusBtn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="−"
+            android:textColor="@color/lightBrown"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Quantity Number -->
+        <TextView
+            android:id="@+id/numberCartTxt"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="1" />
+
+        <!-- Plus Button -->
+        <TextView
+            android:id="@+id/plusBtn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

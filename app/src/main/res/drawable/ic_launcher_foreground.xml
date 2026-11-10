@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Rising Steam Lines (Warm Amber & Gold) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#EEB388"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M46,39 C43,33 49,27 46,21" />
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#F69724"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M54,39 C58,32 50,25 54,17" />
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#EEB388"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M62,39 C59,33 65,27 62,21" />
+
+    <!-- Saucer / Plate -->
+    <path
+        android:fillColor="#EEB388"
+        android:pathData="M30,76 h48 c2.2,0 4,1.8 4,4 c0,0.5 -0.4,1 -1,1 H27 c-0.6,0 -1,-0.5 -1,-1 c0,-2.2 1.8,-4 4,-4 z" />
+
+    <!-- Cup Handle -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M70,51 C79,51 79,67 70,67" />
+
+    <!-- Cup Body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,46 h38 c0,0 1,16 -7,24 c-4,4 -8,5 -12,5 c-4,0 -8,-1 -12,-5 c-8,-8 -7,-24 -7,-24 z" />
+
+    <!-- Coffee Liquid inside rim -->
+    <path
+        android:fillColor="#3D261C"
+        android:pathData="M36,46 h36 c0,2 -8,4 -18,4 c-10,0 -18,-2 -18,-4 z" />
+
+    <!-- Coffee Bean Emblem on Cup -->
+    <!-- Left half of bean -->
+    <path
+        android:fillColor="#F69724"
+        android:pathData="M52,56 C49,56 47,59 47,62 C47,65 50,67 52.5,67 C52.2,65 52.5,63 53.5,61.5 C54.2,60.5 54,58 52,56 Z" />
+    <!-- Right half of bean -->
+    <path
+        android:fillColor="#F69724"
+        android:pathData="M56,56 C59,56 61,59 61,62 C61,65 58,67 55.5,67 C55.8,65 55.5,63 54.5,61.5 C53.8,60.5 54,58 56,56 Z" />
+
+</vector>

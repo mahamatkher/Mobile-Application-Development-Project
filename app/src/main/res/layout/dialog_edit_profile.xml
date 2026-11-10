@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/brown_2_semi_corner"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Title & Cloud Badge -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_brand_pill"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                app:srcCompat="@drawable/ic_cloud_check" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Cloud Sync"
+                android:textColor="#81C784"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Updates are saved live to the Firebase cloud server."
+        android:textColor="@color/lightBrown"
+        android:textSize="13sp" />
+
+    <!-- Full Name Input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="6dp"
+        android:text="Full Name"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dialogNameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/brown_2_full_corner"
+        android:hint="Your full name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightBrown"
+        android:textSize="14sp" />
+
+    <!-- Phone Number Input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="6dp"
+        android:text="Phone Number"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dialogPhoneEdt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/brown_2_full_corner"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="10dp"
+        android:hint="+91 98765 43210"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightBrown"
+        android:textSize="14sp"
+        app:drawableTint="@color/lightBrown" />
+
+    <!-- Delivery Address Input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="6dp"
+        android:text="Coffee Delivery Address"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dialogAddressEdt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/brown_2_full_corner"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="10dp"
+        android:hint="Hostel/Campus or Home Address"
+        android:importantForAutofill="no"
+        android:inputType="textPostalAddress"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightBrown"
+        android:textSize="14sp"
+        app:drawableTint="@color/lightBrown" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialogCancelBtn"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/brown_2_full_corner"
+            android:text="Cancel"
+            android:textColor="@color/lightBrown"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialogSaveBtn"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1.2"
+            android:background="@drawable/drowel_full_corner_db"
+            android:text="Save to Cloud"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
